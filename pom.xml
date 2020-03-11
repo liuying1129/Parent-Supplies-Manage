@@ -20,14 +20,19 @@
 		<!-- 顺序无关，maven会根据依赖关系进行排序、编译 -->
 
 		<!-- 平行目录结构 -->
+		<!-- 用此聚合可以更方便(一起编译),实际上可以单独编译服务提供者项目、服务消费者项目 -->
+		<!-- 微服务-接口 -->
 	    <module>../supplies-manage-interface</module>
+		<!-- 微服务-服务提供者依赖的JAR -->
+	    <module>../JAR-LisFunction</module>
+		<!-- 微服务-服务提供者 -->
 	    <module>../supplies-manage-dubbo-provider</module>
+		<!-- 微服务-服务消费者 -->
 	    <module>../supplies-manage-web</module>
 
 	    <!-- 父子目录结构 -->	    
 	    <!-- <module>supplies-manage-interface</module> -->
         <!-- <module>supplies-manage-dubbo-provider</module> -->
-        <!-- 先将duboo消费者程序放在父目录中.应该可以独立出来,全部调通后再测试 -->
         <!-- <module>supplies-manage-web</module> -->
 
 	    <!-- JAR-LYFunction、WAR-YkAPI是子项目的目录名称 -->
