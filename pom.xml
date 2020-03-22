@@ -25,6 +25,8 @@
 	    <module>../supplies-manage-interface</module>
 		<!-- 微服务-服务提供者依赖的JAR -->
 	    <module>../JAR-LisFunction</module>
+		<!-- 微服务-服务提供者依赖的JAR -->
+	    <module>../JAR-LYFunction</module>
 		<!-- 微服务-服务提供者 -->
 	    <module>../supplies-manage-dubbo-provider</module>
 		<!-- 微服务-服务消费者 -->
